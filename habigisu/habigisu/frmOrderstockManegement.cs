@@ -207,11 +207,37 @@ namespace habigisu
         {
             if (e.KeyCode == Keys.Enter)
             {
-                
+
             }
         }
 
-       
+        private void frmOrderstockManegement_Shown(object sender, EventArgs e)
+        {
+            fOSNamberTBox.Focus();
+        }
+
+        private void fOSNamberTBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                fOSMerchandiseTBox.Focus();
+            }
+        }
+
+        private void fOSMerchandiseTBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                fOSOrdernamebrandTBox.Focus();
+            }
+        }
+
+        private void fOSOrdernamebrandTBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                fOSOrderidTBox.Focus();
+            }
+        }
     }
 }
-    

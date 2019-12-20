@@ -200,6 +200,7 @@
             this.fOSNamberTBox.Size = new System.Drawing.Size(106, 22);
             this.fOSNamberTBox.TabIndex = 19;
             this.fOSNamberTBox.TextChanged += new System.EventHandler(this.fOSNamberTBox_TextChanged);
+            this.fOSNamberTBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.fOSNamberTBox_KeyDown);
             // 
             // fOSMerchandiseTBox
             // 
@@ -216,6 +217,7 @@
             this.fOSOrdernamebrandTBox.Size = new System.Drawing.Size(125, 22);
             this.fOSOrdernamebrandTBox.TabIndex = 21;
             this.fOSOrdernamebrandTBox.TextChanged += new System.EventHandler(this.fOSOrdernamebrandTBox_TextChanged);
+            this.fOSOrdernamebrandTBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.fOSMerchandiseTBox_KeyDown);
             // 
             // fOSOrderidTBox
             // 
@@ -224,6 +226,7 @@
             this.fOSOrderidTBox.Size = new System.Drawing.Size(118, 22);
             this.fOSOrderidTBox.TabIndex = 22;
             this.fOSOrderidTBox.TextChanged += new System.EventHandler(this.fOSOrderidTBox_TextChanged);
+          
             // 
             // fOSDataGridView1
             // 
@@ -280,6 +283,7 @@
             this.Name = "frmOrderstockManegement";
             this.Text = "frmOrderstockManegement";
             this.Load += new System.EventHandler(this.frmOrderstockManegement_Load);
+            this.Shown += new System.EventHandler(this.frmOrderstockManegement_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.fOSDataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
